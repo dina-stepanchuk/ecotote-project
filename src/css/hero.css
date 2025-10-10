@@ -4,9 +4,8 @@
 }
 .hero > .container {
   width: 100%;
-  max-width: 320px; /* или 375px для мобильной ширины */
-  margin: 0 auto;
-  padding: 0 16px; /* немного внутреннего отступа */
+  max-width: 320px;
+  padding: 0 16px;
 }
 .hero-title {
   margin: 0 0 20px 0;
@@ -51,6 +50,12 @@
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #77817a;
+}
+.hero-btn:active {
+  background-color: #68856c;
+}
+.hero-btn:disabled {
+  background-color: #bdc8bf;
 }
 .hero-img {
   border-radius: 40px;
