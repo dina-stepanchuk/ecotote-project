@@ -1,3 +1,133 @@
 /*  */
 .hero {
+  padding: 64px 0;
+}
+.hero > .container {
+  width: 100%;
+  max-width: 320px; /* или 375px для мобильной ширины */
+  margin: 0 auto;
+  padding: 0 16px; /* немного внутреннего отступа */
+}
+.hero-title {
+  margin: 0 0 20px 0;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #030a06;
+  width: 288px;
+}
+.hero-txt {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
+  margin: 0 0 24px 0;
+  width: 288px;
+}
+.hero-link {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 24px;
+  width: 288px;
+  height: 50px;
+  background: #030a06;
+  margin: 0 0 24px 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #77817a;
+}
+.hero-img {
+  border-radius: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero > .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+  .hero-title {
+    flex: 0 0 auto;
+    width: 50%;
+    font-size: 40px;
+  }
+  .hero-side {
+    flex: 0 0 auto;
+    width: 340px;
+  }
+  .hero-txt {
+    font-size: 18px;
+    margin: 0 0 32px 0;
+    width: 100%;
+  }
+  .hero-btn {
+    gap: 16px;
+    width: 148px;
+    height: 50px;
+  }
+  .hero-img {
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero > .container {
+    padding: 0 64px;
+    max-width: 1440px;
+  }
+  .hero-content {
+    gap: 32px;
+  }
+  .hero-title {
+    width: 49%;
+    font-size: 56px;
+  }
+  .hero-side {
+    flex: 0 0 auto;
+    width: 640px;
+  }
+  .hero-txt {
+    font-size: 18px;
+    margin: 0 0 32px 0;
+    width: 100%;
+  }
+  .hero-btn {
+    gap: 16px;
+    width: 148px;
+    height: 50px;
+  }
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
 }
