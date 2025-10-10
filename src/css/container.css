@@ -1,9 +1,8 @@
 .container {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   padding-inline: 16px;
-  min-width: 320px;
+  max-width: 320px;
 }
 @media (min-width: 768px) {
   .container {
