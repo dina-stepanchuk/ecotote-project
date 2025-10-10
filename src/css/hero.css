@@ -47,7 +47,7 @@
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #77817a;
-  border: 1px solid #030a06;
+  border: 1px solid #77817a;
 }
 .hero-btn:active {
   background-color: #68856c;
@@ -62,16 +62,9 @@
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
   .hero {
     padding: 32px 0;
   }
-  .hero > .container {
-    padding: 0 32px;
-    max-width: 768px;
-  }
-=======
->>>>>>> 8d7fa220a23e59465e0110e860dcaf6a127d6a3b
   .hero-container {
     display: flex;
     flex-direction: column;
