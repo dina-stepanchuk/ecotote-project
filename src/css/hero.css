@@ -51,18 +51,24 @@
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #77817a;
+  border: 1px solid #030a06;
 }
 .hero-btn:active {
   background-color: #68856c;
+  border: 1px solid #68856c;
 }
 .hero-btn:disabled {
   background-color: #bdc8bf;
+  border: 1px solid #bdc8bf;
 }
 .hero-img {
   border-radius: 40px;
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 32px 0;
+  }
   .hero > .container {
     padding: 0 32px;
     max-width: 768px;
