@@ -1,0 +1,215 @@
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+
+.support-tittle {
+font-size: 36px;
+color: var(--color-scheme-1-text);
+max-width: 288px;
+margin: 32px auto 24px auto;
+}
+
+.support-subtittle {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: var(--color-scheme-1-text);
+margin: 0 auto 32px 0;
+}
+
+.support-input-field {margin-bottom: 24px;}
+
+.support-label {
+display: inline-block;
+margin-bottom: 8px;
+color: var(--color-scheme-1-text);
+}
+
+.form-element {
+width: 100%;
+border: 1px solid var(--opacity-neutral-darkest-15);
+border-radius: 6px;
+background: var(--opacity-neutral-darkest-5);
+color: var(--color-scheme-2-text);
+}
+
+.form-input {
+padding: 8px 12px;
+height: 42px;
+}
+
+.form-input::placeholder {color: var(--opacity-neutral-darkest-60);}
+
+.form-input:focus::placeholder {
+opacity: 0; 
+}
+
+.form-input:focus {
+outline: none;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+border-color: red;
+}
+
+.form-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+#name:not(:placeholder-shown):valid ~ .name-valid {
+  display: block;
+}
+
+#name:not(:placeholder-shown):invalid ~ .name-invalid {
+  display: block;
+}
+
+#email:not(:placeholder-shown):valid ~ .email-valid {
+  display: block;
+}
+
+#email:not(:placeholder-shown):invalid ~ .email-invalid {
+  display: block;
+}
+
+.form-textarea {
+padding: 12px;
+height: 180px;
+resize: none;
+}
+
+.form-textarea::placeholder {color: var(--opacity-neutral-darkest-60);}
+
+.form-textarea:focus::placeholder {
+opacity: 0; 
+}
+
+.form-textarea:focus {
+outline: none;
+}
+
+.support-btn {
+border: 1px solid var(--color-neutral-darkest);
+border-radius: 6px;
+padding: 12px 24px;
+width: 288px;
+height: 50px;
+background: var(--color-neutral-darkest);
+color: var(--color-white);
+margin-bottom: 24px;
+cursor: pointer; 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.support-btn:hover, 
+.support-btn:focus {
+background: var(--color-neutral-darkest);
+opacity: 0.5;
+border: 1px solid var(--color-neutral-darkest);
+}
+
+.support-btn:active {
+background: var(--color-emerald-darkest);
+opacity: 0.6;    
+border: 1px solid var(--color-emerald-darkest);
+}
+
+.support-img {
+background-image: url(/img/Support/support-mob-1x.webp);
+background-size: cover; 
+background-position: center; 
+width: 100%; 
+height: 428px;
+border-radius: 40px;
+margin-bottom: 32px;
+}
+@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
+.support-img{
+background-image: url("../img/Support/support-mob-2x.webp");}
+}
+
+
+/*---------MEDIA----------*/
+
+    /*---TABLET---*/
+@media screen and (min-width:768px) {
+
+.container {
+padding-inline: 32px;
+max-width: 768px;
+}
+
+.support-tittle {
+max-width: 468px;
+margin: 64px auto 24px 0;
+}
+
+.support-btn {width: 249px;}
+
+.support-img {
+background-image: url(/img/Support/support-tab-1x.webp);
+margin-bottom: 64px;
+}
+@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {.support-img{
+background-image: url("/img/Support/support-tab-2x.webp");}
+}
+}
+
+
+    /*---DESKTOP---*/
+@media screen and (min-width:1440px){
+
+.container {
+padding-inline: 64px;
+max-width: 1440px;
+}
+  
+.support-flex {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+}
+
+.flex-item {width: calc((100% - 24px) / 2);}
+
+.support-tittle {
+font-size: 48px;
+max-width: 644px;
+margin: 64px auto 24px 0;
+}
+
+.support-btn {
+width: 198px;
+margin: 0;
+}
+
+.support-img {
+background-image: url(/img/Support/support-desk-1x.webp);
+width: 644px;
+height: 767px;
+margin: 64px auto;
+}
+@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {.support-img{
+background-image: url("/img/Support/support-desk-2x.webp");}
+}
+}
