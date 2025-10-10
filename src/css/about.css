@@ -1,0 +1,10 @@
+.about-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+  background-image: url('../img/About/about-mob-1x.webp');
+  background-repeat: no-repeat;
+}
+.about-container {
+  color: var(--color-white);
+}
