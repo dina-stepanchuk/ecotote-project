@@ -2,11 +2,7 @@
 .hero {
   padding: 64px 0;
 }
-.hero > .container {
-  width: 100%;
-  max-width: 320px;
-  padding: 0 16px;
-}
+
 .hero-title {
   margin: 0 0 20px 0;
   font-family: 'Comfortaa', sans-serif;
@@ -66,6 +62,7 @@
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
   .hero {
     padding: 32px 0;
   }
@@ -73,6 +70,8 @@
     padding: 0 32px;
     max-width: 768px;
   }
+=======
+>>>>>>> 8d7fa220a23e59465e0110e860dcaf6a127d6a3b
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -113,10 +112,6 @@
 }
 
 @media (min-width: 1440px) {
-  .hero > .container {
-    padding: 0 64px;
-    max-width: 1440px;
-  }
   .hero-content {
     gap: 32px;
   }
