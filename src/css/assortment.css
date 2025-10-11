@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap: 32px;
+  gap: 40px;
 }
 
 .assortment-item {
@@ -26,9 +26,12 @@
   width: 100%;
 }
 
+.assortment-picture {
+  margin-bottom: 16px;
+}
+
 .assortment-image {
   border-radius: 32px;
-  margin-bottom: 16px;
   width: 100%;
   height: auto;
   display: block;
