@@ -17,8 +17,8 @@ ol {
 
 a {
   color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 button {
