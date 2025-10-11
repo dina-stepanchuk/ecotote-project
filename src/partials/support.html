@@ -16,21 +16,18 @@
                     required/>
                     <p class="text-valid name-valid">Success!</p>
                     <p class="text-invalid name-invalid">Invalid name, try again</p>
-                    <p class="text-valid email-valid">Success!</p>
-                    <p class="text-invalid email-invalid">Invalid email, try again</p>
+                    
                 </div>
 
                 <div class="support-input-field">
                     <label for="email" class="support-label">Електронна пошта</label>
-                    <input type="email" 
+                    <input type="email"
                     class="form-input form-element" 
                     id="email" 
                     name="user-email"                
                     placeholder="hello@ecotote.com" 
-                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" 
-                    required/>
-                    <p class="text-valid name-valid">Success!</p>
-                    <p class="text-invalid name-invalid">Invalid name, try again</p>
+                    pattern="(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)" 
+                    required/>                    
                     <p class="text-valid email-valid">Success!</p>
                     <p class="text-invalid email-invalid">Invalid email, try again</p>
                 </div>

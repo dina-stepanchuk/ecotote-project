@@ -1,8 +1,12 @@
+.support {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
 .support-tittle {
 font-size: 36px;
 color: var(--color-scheme-1-text);
 max-width: 288px;
-margin: 32px auto 24px auto;
 }
 
 .support-subtittle {
@@ -46,7 +50,7 @@ outline: none;
 }
 
 .form-input:not(:placeholder-shown):invalid {
-border-color: red;
+border-color: var(--color-error-red);
 }
 
 .form-input:not(:placeholder-shown):valid {
@@ -66,7 +70,7 @@ border-color: red;
 }
 
 .text-invalid {
-  color: red;
+  color: var(--color-error-red);;
 }
 
 #name:not(:placeholder-shown):valid ~ .name-valid {
@@ -134,7 +138,6 @@ background-position: center;
 width: 100%; 
 height: 428px;
 border-radius: 40px;
-margin-bottom: 32px;
 }
 @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
 .support-img{
@@ -147,16 +150,19 @@ background-image: url("../img/Support/support-mob-2x.webp");}
     /*---TABLET---*/
 @media screen and (min-width:768px) {
 
+.support {
+padding-top: 64px;
+padding-bottom: 64px;
+}
+
 .support-tittle {
 max-width: 468px;
-margin: 64px auto 24px 0;
 }
 
 .support-btn {width: 249px;}
 
 .support-img {
 background-image: url(/img/Support/support-tab-1x.webp);
-margin-bottom: 64px;
 }
 @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {.support-img{
 background-image: url("/img/Support/support-tab-2x.webp");}
@@ -178,7 +184,6 @@ column-gap: 24px;
 .support-tittle {
 font-size: 48px;
 max-width: 644px;
-margin: 64px auto 24px 0;
 }
 
 .support-btn {
@@ -190,7 +195,6 @@ margin: 0;
 background-image: url(/img/Support/support-desk-1x.webp);
 width: 644px;
 height: 767px;
-margin: 64px auto;
 }
 @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {.support-img{
 background-image: url("/img/Support/support-desk-2x.webp");}
