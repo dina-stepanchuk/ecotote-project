@@ -51,6 +51,7 @@ outline: none;
 
 .form-input:not(:placeholder-shown):invalid {
 border-color: var(--color-error-red);
+color: var(--color-error-red);
 }
 
 .form-input:not(:placeholder-shown):valid {
@@ -70,7 +71,7 @@ border-color: var(--color-error-red);
 }
 
 .text-invalid {
-  color: var(--color-error-red);;
+  color: var(--color-error-red);
 }
 
 #name:not(:placeholder-shown):valid ~ .name-valid {
