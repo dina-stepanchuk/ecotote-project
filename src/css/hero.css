@@ -29,6 +29,8 @@
   white-space: nowrap;
 }
 .hero-btn {
+  display: flex;
+  justify-content: center;
   border: 1px solid #030a06;
   border-radius: 6px;
   padding: 12px 24px;
