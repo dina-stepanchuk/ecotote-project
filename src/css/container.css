@@ -1,4 +1,4 @@
-/* .container {
+.container {
   width: 100%;
   margin: 0 auto;
   padding-inline: 16px;
@@ -14,22 +14,5 @@
   .container {
     padding-inline: 64px;
     max-width: 1440px;
-  }
-} */
-
-.container {
-  /* 16px + 16px падінги */
-  width: min(100% - 32px, 1440px);
-  margin: 0 auto;
-  padding-inline: 16px;
-}
-@media (min-width: 768px) {
-  .container {
-    padding-inline: 32px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    padding-inline: 64px;
   }
 }
