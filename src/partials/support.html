@@ -1,1 +1,47 @@
-<section class="support"></section>
+<section class="support" id="support">
+    <div class="container support-flex">
+        <div class="support-content flex-item">
+            <h2 class="support-tittle comfortaa">Залишились питання? Зв'яжіться з нами!</h2>
+            <h3 class="support-subtittle">Ми тут, щоб допомогти!</h3>
+            <form class="support-form">
+                <div class="support-input-field">
+                    <label for="name" class="support-label">Ім'я</label>
+                    <input type="text" 
+                    class="form-input form-element" 
+                    id="name" 
+                    name="user-name"               
+                    placeholder="Іван" 
+                    minlength="5" 
+                    maxlength="64" 
+                    required/>                    
+                    <p class="text-invalid name-invalid">Invalid name, try again</p>
+                    
+                </div>
+
+                <div class="support-input-field">
+                    <label for="email" class="support-label">Електронна пошта</label>
+                    <input type="email"
+                    class="form-input form-element" 
+                    id="email" 
+                    name="user-email"                
+                    placeholder="hello@ecotote.com" 
+                    pattern="(^[^\s@]+@[^\s@]+\.[^\s@]{2,}$)" 
+                    required/>                
+                    <p class="text-invalid email-invalid">Invalid email, try again</p>
+                </div>
+
+                 <div class="support-input-field">
+                    <label for="user-text" class="support-label">Повідомлення</label>
+                    <textarea class="form-textarea form-element"
+                    name="user-text"
+                    id="user-text"
+                    maxlength="500"
+                    placeholder="Введіть своє повідомлення..." ></textarea>
+                </div>
+    
+                <button type="submit" class="support-btn">Надіслати</button>
+            </form>
+        </div>
+        <div class="support-img flex-item"></div>
+    </div>
+</section>
