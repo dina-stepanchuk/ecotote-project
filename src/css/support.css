@@ -54,11 +54,6 @@ border-color: var(--color-error-red);
 color: var(--color-error-red);
 }
 
-.form-input:not(:placeholder-shown):valid {
-  border-color: green;
-}
-
-.text-valid,
 .text-invalid {
   font-size: 14px;
   padding-left: 20px;
@@ -66,23 +61,11 @@ color: var(--color-error-red);
   display: none;
 }
 
-.text-valid {
-  color: green;
-}
-
 .text-invalid {
   color: var(--color-error-red);
 }
 
-#name:not(:placeholder-shown):valid ~ .name-valid {
-  display: block;
-}
-
 #name:not(:placeholder-shown):invalid ~ .name-invalid {
-  display: block;
-}
-
-#email:not(:placeholder-shown):valid ~ .email-valid {
   display: block;
 }
 
@@ -121,9 +104,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 
 .support-btn:hover, 
 .support-btn:focus {
-background: var(--color-neutral-darkest);
 opacity: 0.5;
-border: 1px solid var(--color-neutral-darkest);
 }
 
 .support-btn:active {
