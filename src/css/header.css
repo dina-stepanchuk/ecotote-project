@@ -91,12 +91,19 @@ address {
 } 
 
 .mobile-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 64px;  /* висота header */
+  z-index: 900; 
   background: var(--color-emerald-light);
+  min-height: 100vh;
 }
+
 
 .mobile-nav {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
 }
 
 .mobile-nav__list {
@@ -119,7 +126,7 @@ address {
 
 .mobile-contacts__list {
   display: grid;
-  row-gap: 32px;
+  row-gap: 16px;
 }
 .mobile-contacts__link {
   display: inline-flex;
@@ -129,8 +136,12 @@ address {
   color: var(--color-neutral-darker);
 }
 
-.mobile-nav__link:hover, .mobile-nav__link:focus-visible, .mobile-nav__link:active,
-.mobile-contacts__link:hover, .mobile-contacts__link:focus-visible, .mobile-contacts__link:active {
+.mobile-nav__link:hover, 
+.mobile-nav__link:focus-visible, 
+.mobile-nav__link:active,
+.mobile-contacts__link:hover, 
+.mobile-contacts__link:focus-visible, 
+.mobile-contacts__link:active {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 7px;
@@ -186,11 +197,17 @@ address {
   .contacts-list { 
     display: flex; 
     align-items: center; 
-    gap: 18px; }
+    gap: 16px; }
 
-  .nav__link:hover,.nav__link:focus, .nav__link:active,
-  .header__phone:hover, .header__phone:focus, .header__phone:active, 
-  .header__email:hover, .header__email:focus  , .header__email:active {
+  .nav__link:hover,
+  .nav__link:focus,
+   .nav__link:active,
+  .header__phone:hover, 
+  .header__phone:focus,
+   .header__phone:active, 
+  .header__email:hover, 
+  .header__email:focus, 
+  .header__email:active {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
