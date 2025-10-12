@@ -2,6 +2,7 @@
   (function () {
     const btn = document.querySelector('.burger');
     const panel = document.getElementById('mobile-menu');
+    const overlay = document.querySelector('.overlay');
     if (!btn || !panel) return;
 
     function openMenu() {
@@ -10,7 +11,13 @@
       btn.setAttribute('aria-expanded', 'true');
       btn.setAttribute('aria-label', 'Закрити меню');
       document.documentElement.classList.add('no-scroll'); // заборона скролу сторінки
+    
+     //  показати overlay і ввімкнути йому прийом кліків
+    if (overlay) {
+      overlay.hidden = false;
+      requestAnimationFrame(() => overlay.classList.add('active'));
     }
+  }
 
     function closeMenu() {
       panel.setAttribute('hidden', '');         // сховати панель
@@ -18,18 +25,26 @@
       btn.setAttribute('aria-expanded', 'false');
       btn.setAttribute('aria-label', 'Відкрити меню');
       document.documentElement.classList.remove('no-scroll');
+    
+      //  прибрати overlay
+    if (overlay) {
+      overlay.classList.remove('active');
+      overlay.hidden = true;
     }
+  }
 
     btn.addEventListener('click', () => {
       const opened = btn.classList.contains('is-open');
       opened ? closeMenu() : openMenu();
     });
 
-    // Закриття по Esc (якщо меню відкрите)
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && btn.classList.contains('is-open')) {
-        closeMenu();
-      }
-    });
-  })();
+    // Закриття по Esc
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && btn.classList.contains('is-open')) closeMenu();
+  });
+
+  // Клік по напівпрозорому фону — також закриває меню
+  if (overlay) overlay.addEventListener('click', closeMenu);
+})();
+
 

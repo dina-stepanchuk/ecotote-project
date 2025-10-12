@@ -1,7 +1,4 @@
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   background: var(--color-emerald-light);
 }
 
@@ -82,6 +79,31 @@ address {
 
 @media (prefers-reduced-motion: reduce) {
   .burger__line { transition: none; }
+
+}
+
+/* ==== OVERLAY ========================== */
+
+html.no-scroll { 
+  overflow: hidden; 
+} 
+
+.overlay {
+  position: fixed;
+  top: var(--header-h);  
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 800;          
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto; 
 }
 
  /* ==== MOBILE MENU ========================== */
