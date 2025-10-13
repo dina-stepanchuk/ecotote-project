@@ -1,23 +1,5 @@
-.advantages .container {
-  max-width: 320px;
-} 
-.section .advantages{
+.advantages{
     padding: 32px 0;
-}
-@media screen and (min-width: 768px) {
-  .advantages .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-  .section .advantages{
-    padding: 64px 0;
-  }}
-
-@media screen and (min-width: 768px) {
-  .advantages .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
 }
 
 .advantages-desc,
@@ -46,6 +28,7 @@ line-height: 1.5;
 line-height: 1.6;
 margin-bottom: 48px;
 }
+
 
 .advantages-li picture {
   border-radius: 32px ;
@@ -77,16 +60,16 @@ margin-bottom: 48px;
 .advantages-li-text{
 line-height: 1.6;
 }
-/* планш */
 @media screen and (min-width: 768px) {
-
+.advantages{
+    padding: 64px 0;
+  }
   .advantages-subtitle{
-    /* margin-top: 64px; */
     margin-bottom: 16px;
 
 }
 .advantages-title {
-    margin-bottom: 24px;/
+    margin-bottom: 24px;
 }
 .advantages-desc{
   font-size: 18px;
@@ -106,7 +89,6 @@ line-height: 1.6;
     margin-bottom: 32px;
 }
 }
-/* деск  */
 
 @media only screen and (min-width: 1440px) {
 
@@ -119,10 +101,10 @@ line-height: 1.6;
 
 .advantages-title {
   font-size: 48px;
+  margin-bottom: 24px;
 }
 .advantages-desc{
     font-size: 16px;
-line-height: 1.6;
 margin-bottom: 80px;
 }
 
