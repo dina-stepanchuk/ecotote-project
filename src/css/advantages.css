@@ -1,17 +1,13 @@
 .advantages{
     padding: 32px 0;
 }
-
-.advantages-desc,
-.advantages-text {
-  margin-bottom: 48px;
-}
 .advantages-subtitle{
  color: #030A06;
     margin-bottom: 12px;
 }
 
 .advantages-title {
+  color:#030A06;
   margin: 0;
   font-family: "Comfortaa", sans-serif;
   font-weight: 700;
@@ -22,10 +18,10 @@
 
 }
 .advantages-desc{
+  color:#030A06;
 line-height: 1.6;
 margin-bottom: 48px;
 }
-
 
 .advantages-li picture {
   border-radius: 32px ;
@@ -69,6 +65,7 @@ line-height: 1.6;
     margin-bottom: 24px;
 }
 .advantages-desc{
+  max-width: 768px;
   font-size: 18px;
   margin-bottom: 32px;
 }
@@ -98,7 +95,6 @@ line-height: 1.6;
 
 .advantages-title {
   font-size: 48px;
-  margin-bottom: 24px;
 }
 .advantages-desc{
     font-size: 16px;
