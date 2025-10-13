@@ -1,65 +1,92 @@
-  <!-- HEADER -->
-  <header class="header" id="header" aria-label="Основна шапка сайту">
-    <div class="container header__container">
+<!-- HEADER -->
+<header class="header" id="header" aria-label="Основна шапка сайту">
+  <div class="container header__container">
+    <a class="logo" href="/" aria-label="Перехід на головну сторінку">
+      <img class="logo__img" src="../img/logo.svg" alt="Логотип EcoTote" />
+    </a>
 
-      
-      <a class="logo" href="/" aria-label="Перехід на головну сторінку">
-        <img class="logo__img" src="../img/logo.svg" alt="Логотип EcoTote">
-      </a>
-    
-      <nav class="nav" aria-label="Головна навігація">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#about">Про нас</a></li>
-          <li class="nav__item"><a class="nav__link" href="#advantages">Переваги</a></li>
-          <li class="nav__item"><a class="nav__link" href="#assortment">Асортимент</a></li>
-          <li class="nav__item"><a class="nav__link" href="#gallery">Галерея</a></li>
-          <li class="nav__item"><a class="nav__link" href="#feedbacks">Відгуки</a></li>
-          <li class="nav__item"><a class="nav__link" href="#support">Контакти</a></li>
-        </ul>
-      </nav>
-    
-      <address class="header__contacts">
-        <ul class="contacts-list">
-          <li class="contacts-item"><a class="header__phone" href="tel:+380999091122">+38 (099) 909 11 22</a></li>
-          <li class="contacts-item"><a class="header__email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-      </address>
+    <nav class="nav" aria-label="Головна навігація">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#about">Про нас</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#advantages">Переваги</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#assortment">Асортимент</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#gallery">Галерея</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#feedbacks">Відгуки</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#support">Контакти</a>
+        </li>
+      </ul>
+    </nav>
 
-      <button class="burger" type="button"
-              aria-label="Відкрити меню"
-              aria-controls="mobile-menu"
-              aria-expanded="false">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
+    <address class="header__contacts">
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a class="header__phone" href="tel:+380999091122"
+            >+38 (099) 909 11 22</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a class="header__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+    </address>
 
-    </div>
-  </header>
-
-    <!-- MOBILE MENU  -->
-  <div id="mobile-menu" class="mobile-menu" hidden>
-
-    
-    <div class="container mobile-menu__container">
-      <nav class="mobile-nav" aria-label="Мобільна навігація">
-        <ul class="mobile-nav__list">
-          <li><a class="mobile-nav__link" href="#about">Про нас</a></li>
-          <li><a class="mobile-nav__link" href="#advantages">Переваги</a></li>
-          <li><a class="mobile-nav__link" href="#assortment">Асортимент</a></li>
-          <li><a class="mobile-nav__link" href="#gallery">Галерея</a></li>
-          <li><a class="mobile-nav__link" href="#feedbacks">Відгуки</a></li>
-          <li><a class="mobile-nav__link" href="#support">Контакти</a></li>
-        </ul>
-      </nav>
-
-      <address class="mobile-contacts">
-        <ul class="mobile-contacts__list">
-          <li><a class="mobile-contacts__link" href="tel:+380999091122">+38 (099) 909 11 22</a></li>
-          <li><a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-      </address>
-
-    </div>
+    <button
+      class="burger"
+      type="button"
+      aria-label="Відкрити меню"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
+</header>
 
+<!--  ДОДАНО: напівпрозорий оверлей між контентом і мобільним меню -->
+<div class="overlay" hidden aria-hidden="true"></div>
+
+<!-- MOBILE MENU  -->
+<div id="mobile-menu" class="mobile-menu" hidden>
+  <div class="container mobile-menu__container">
+    <nav class="mobile-nav" aria-label="Мобільна навігація">
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" href="#about">Про нас</a></li>
+        <li><a class="mobile-nav__link" href="#advantages">Переваги</a></li>
+        <li><a class="mobile-nav__link" href="#assortment">Асортимент</a></li>
+        <li><a class="mobile-nav__link" href="#gallery">Галерея</a></li>
+        <li><a class="mobile-nav__link" href="#feedbacks">Відгуки</a></li>
+        <li><a class="mobile-nav__link" href="#support">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <address class="mobile-contacts">
+      <ul class="mobile-contacts__list">
+        <li>
+          <a class="mobile-contacts__link" href="tel:+380999091122"
+            >+38 (099) 909 11 22</a
+          >
+        </li>
+        <li>
+          <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</div>
