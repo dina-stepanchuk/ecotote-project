@@ -7,11 +7,8 @@
   margin-bottom: 48px;
 }
 .advantages-subtitle{
-    /* margin-top: 32px; */
+ color: #030A06;
     margin-bottom: 12px;
-font-weight: 600;
-font-size: 16px;
-line-height: 1.5;
 }
 
 .advantages-title {
@@ -36,7 +33,7 @@ margin-bottom: 48px;
 }
 
 .advantages-list {
-  margin-bottom: 32px;
+
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
