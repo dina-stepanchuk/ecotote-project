@@ -1,0 +1,95 @@
+/* =====  (база) ===== */
+.feedbacks {  
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.feedbacks__title {
+  font-family: var(--second-family, 'Comfortaa', sans-serif);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: var(--color-neutral-darker);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.feedbacks__list { 
+  display: grid;
+  row-gap: 40px;
+}
+
+.rating {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.star { 
+  display: inline-block;
+  fill: var(--color-white);
+}
+
+.star use { 
+    pointer-events: none; 
+}
+
+.star__filled { 
+    fill: var(--color-emerald); 
+}
+
+
+.feedbacks__text {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  padding: 12px 0;
+}
+
+.feedbacks__author {
+  font-family: var(--font-family, 'Fira Sans', sans-serif);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+@media (min-width: 768px) {
+  .feedbacks {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }  
+
+  .feedbacks__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px; 
+    row-gap: 32px;     
+  }
+} 
+
+@media (min-width: 1440px) {
+  .feedbacks__title{
+    font-size: 48px;
+    width: 560px;
+    margin: 0 auto 80px;
+  }
+    
+  .feedbacks__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .feedbacks__item {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    row-gap: 24px;                      
+    height: 100%;
+  }
+
+  .feedbacks__text {
+    padding: 0;
+  }
+  
+}
